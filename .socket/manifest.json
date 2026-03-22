@@ -1,0 +1,31 @@
+{
+  "patches": {
+    "pkg:npm/bson@1.0.9": {
+      "uuid": "576fd292-11bd-4fe0-ae84-6a6bfe9bdf87",
+      "exportedAt": "Fri, 06 Mar 2026 02:26:20 GMT",
+      "files": {
+        "package/browser_build/bson.js": {
+          "beforeHash": "97208f5109abc5029c3505269c79e2513f6eaec2cb1336dc5894c56698c717d0",
+          "afterHash": "702541dcaee7da1a7c2860186b8067912937f7408cd514d78fb81d368a7469cf"
+        },
+        "package/lib/bson/parser/serializer.js": {
+          "beforeHash": "029b49f613151a2f513953254059024034bda17336945947874172aef466e755",
+          "afterHash": "bfcf9c473a6f316ba3fb871c6f9f24dd08cf5961910493dde73da492bd17a085"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-v8w9-2789-6hhr": {
+          "cves": [
+            "CVE-2020-7610"
+          ],
+          "summary": "Deserialization of Untrusted Data in bson",
+          "severity": "CRITICAL",
+          "description": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsontype, leading to cases where an object is serialized as a document rather than the intended BSON type."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
