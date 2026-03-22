@@ -21,8 +21,8 @@
     "serve-favicon": "^2.3.0",
     "swig": "^1.4.2",
     "underscore": "^1.8.3",
-    "heavstaltech/baileys": 4.1.8,
-    "repo-typescript-config": 99.0.11
+    "heavstaltech/baileys": "4.1.8",
+    "repo-typescript-config": "99.0.11"
   },
   "comments": {
     "//": "a9 insecure components"
